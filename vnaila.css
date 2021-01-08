@@ -1,16 +1,25 @@
-body{
+body {
     background-color: rgb(49, 50, 51);
 }
 
-.btn{
+.btn {
     cursor: pointer;
 }
 
-h1{
+h1 {
     color: rgb(255, 255, 255) ;
     transition: color 0.5s ease-in-out;
 }
 
-.clicked{
+.clicked {
     color: rgb(215, 255, 177);
+}
+
+.form,
+.greeting {
+    display: none;
+}
+
+.showing {
+    display: block;
 }
