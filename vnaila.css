@@ -18,8 +18,13 @@ h1 {
 .form,
 .greeting {
     display: none;
+    color: snow;
 }
 
 .showing {
     display: block;
+}
+
+.js-toDoList{
+    color: beige;
 }
