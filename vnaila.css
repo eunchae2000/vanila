@@ -1,5 +1,6 @@
 body {
     background-color: rgb(49, 50, 51);
+    text-align: center;
 }
 
 .btn {
@@ -18,7 +19,7 @@ h1 {
 .form,
 .greeting {
     display: none;
-    color: snow;
+    color: rgb(110, 110, 110);
 }
 
 .showing {
@@ -33,8 +34,8 @@ h1 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 120%;
+    height: 120%;
     z-index: -1;
     animation: fadeIn 0.5s linear;
 }
@@ -46,4 +47,20 @@ h1 {
     to{
         opacity: 1;
     }
+}
+
+span{
+    color: snow;
+}
+.js-clock{
+    font-size: 50px;
+}
+.js-greeting{
+    font-size: 50px;
+}
+.js-toDoList{
+    font-size: 20px;
+}
+.js-weather{
+    font-size: 30px;
 }

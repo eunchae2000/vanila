@@ -8,7 +8,7 @@ const form = document.querySelector(".js-form"),
  input = document.querySelector("input"),
  greeting = document.querySelector(".js-greeting")
 
-const USER_LS = "currentUser",
+const USER_LS = "User",
  SHOWING_CN = "showing";
 
 // 사용자가 입력한 정보를 저장하는 기능 (새로고침을 할 경우에도 정보가 저장되어 있어 바뀌지 않음)
@@ -46,11 +46,11 @@ function paintGreeting(text){
 // localStorage를 읽어서 만약 null 값이 아니라면 paintGreeting을 실행 (이름을 색칠하는 기능)
 
 function loadName(){
-    const currentUser = localStorage.getItem(USER_LS);
-    if(currentUser === null){           // user의 내용이 저장되어 있지 않은 경우에 실행
+    const User = localStorage.getItem(USER_LS);
+    if(User === null){           // user의 내용이 저장되어 있지 않은 경우에 실행
         askForName();
     } else{                             // user의 내용이 저장되어 있는 경우에 사용
-        paintGreeting(currentUser);
+        paintGreeting(User);
     }
 }
 
