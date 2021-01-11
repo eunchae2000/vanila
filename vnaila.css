@@ -19,7 +19,7 @@ h1 {
 .form,
 .greeting {
     display: none;
-    color: rgb(110, 110, 110);
+    color: rgb(255, 255, 255);
 }
 
 .showing {
