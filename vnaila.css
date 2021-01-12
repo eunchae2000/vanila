@@ -24,6 +24,7 @@ h1 {
 
 .showing {
     display: block;
+    color: snow;
 }
 
 .js-toDoList{
@@ -40,6 +41,7 @@ h1 {
     animation: fadeIn 0.5s linear;
 }
 
+/* 페이지 로딩 중에 나타낼 수 있는 효과 */
 @keyframes fadeIn{
     from{
         opacity: 0;

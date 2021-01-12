@@ -5,7 +5,7 @@
 // 텍스트 기능을 이용해 이름을 입력하는 박스를 공부
 
 const form = document.querySelector(".js-form"),
- input = document.querySelector("input"),
+ input = form.querySelector("input"),
  greeting = document.querySelector(".js-greeting")
 
 const USER_LS = "User",
