@@ -15,16 +15,16 @@ function getTime(){
     const seconds = date.getSeconds();  // date.getSeconds 구문은 현재 시간을 기준으로 Date 인스턴스의 초를 반환
     
     clockTitle.innerText = `${hours < 10 ? `0${hours}`: hours} : ${minutes < 10 ? `0${minutes}` : minutes} : ${seconds < 10 ? `0${seconds}` : seconds}`;
+}
     // innerText는 사용자가 보이는 텍스트 값만을 가져온다.
     // 복사 붙여 넣기와 같은 느낌
-}
 
 function init(){
     getTime();
     setInterval(getTime, 1000);
+}
     // setInterval 함수는 일정한 시간 간격으로 작업을 수행하기 위해서 사용
     // clearInterval 함수를 사용하여 setInterval 사용을 중지할 수 있음
-}
 
 init();
 // function init() 함수를 실행
