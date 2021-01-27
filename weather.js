@@ -22,7 +22,7 @@ function getWeather(lat, lng){
         // temperature, place를 각각 JSON Data로 설정
         // weather.innerText에서 `~` 사이에 $으로 각각 인자화해서 html에 출력
 
-// 
+// 사용자 위치에 대한 정보 저장
 function saveCoords(coordsObj){
     localStorage.setItem(COORDS, JSON.stringify(coordsObj));
 }
@@ -58,7 +58,7 @@ function askForCoords(){
     // geolocation.getCurrentPosition()는 장치의 현재 위치를 가져오는 것
     // navigator 객체는 브라우저에 대한 정보를 가지고 있는 객체
 
-
+// 모든 정보의 시작을 위한 부분 => 사용자 정보에 대한 상황을 가져오는 것
 function loadCords(){
     const loadCords = localStorage.getItem(COORDS);
     if(loadCords === null){
